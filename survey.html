@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/survey.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <title>Accessible Frog</title>
+  </head>
+
+  <body>
+    <div class="main-nav">
+      <ul class="nav">
+        <li class="name"><a href="index.html">Accessible Frog</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="#">Survey</a></li>
+      </ul>
+    </div>
+
+       <header>
+    <h1>ACCESSIBLE FROG</h1>
+    <h2>We Make Awesome Music</h2>
+    </header>
+
+    <main>
+      <h1 class= "heading">Survey</h1>
+      <div class="card">
+        <div class="flex">
+          <img class="photo" src= "img/concert01.jpg" alt="concert01">
+          <div class="container">
+
+
+<!--
+Form
+Ensure form elements have styled focus states using the :focus pseudo class.
+Add associated labels for form controls.
+Make sure all labels have a ‘for’ value. Matching for and id values associate the label with the appropriate form control.
+Group form elements with a fieldset.
+Add a legend to describe the grouping.
+Ensure the select field options are in alphabetical order.
+Make sure you can select options in the drop-down menu by typing from the keyboard.
+
+-->
+
+
+
+ 
+            <form class="survey" method="post" >
+
+            <fieldset>
+              <legend>Band Favorites</legend>
+              <input id="member-John" type="radio" name="res" value="John">
+              <label for="member-John" >John</label> <br>
+              <input type="radio" id="member-hazzard" name="res" value="Hazzard"> 
+              <label for=member-hazzard>Hazzard</label><br>
+              <input type="radio" id="member-bob" name="res" value="Bob"> 
+              <label for="member-bob" >Bob</label> 
+              <br>
+              <br>
+              <input type="radio" id="member-sally" name="res" value="Sally">
+              <label for="member-sally" >Sally</label> <br>
+      
+              <label for="albums">What is your favorite album:</label>
+              <select id="albums" name="select">
+                <option value="1">A Day Of Old</option>
+                <option value="2">Diamond Fireworks</option>
+                <option value="3">Enjoy Your Desire</option>
+                <option value="4">Finding My Shadow</option>
+                <option value="5">Heroic Forever</option>
+                <option value="6">Midnight Fires</option>
+                <option value="7">Music Of My Life</option>
+                <option value="8">Party For An Angel</option>
+                <option value="9">Song For Yesterday</option>
+                <option value="10">Street Of The Rider</option>
+                <option value="11">This Is For You</option>
+              </select>
+
+              <label for="comment">What is your favorite song:</label>
+              <textarea id="comment"></textarea>
+              <br>
+              <br>
+              <button type="submit">sign up</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+      <h1 class= "heading">Newsletter</h1>
+      <div class="card">
+        <div class="flex">
+          <img class="photo" src= "img/the_band.jpg" alt="An_image_of_the_band">
+            <div class="container">
+            <form action="survey.html" method="post" role="form" class="newsletter">
+                  <fieldset>
+                    <legend>Subscribe to our Newsletter:</legend>
+                      <label for="inputName">Name: </label>
+                      <input  type ="text" name="textfield" id="inputName">
+                      <p id="textField">Enter you name.</p><br>
+                      <label for="inputEmail">Email: </label>
+                      <input  type ="email" name="textfield" id="inputEmail">
+                      <p id="textEmail">Enter you email.</p><br>
+                      <label for="reenterEmail">Re-Enter Email: </label>
+                      <input  type ="email" name="textfield" id="reenterEmail">
+                      <p  id="reenter">Re-Enter your email.</p><br>
+                  </fieldset>
+                  <button  type="submit" role="button">Sign Up</button>
+                  <p id="signUp">Press the Sign Up button to recieve our monthly newsletter.</p>
+              </form>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <ul>
+        <li><a href="#" class="social Twitter"><img src="img/twitter-32.png" alt="check us out on Twitter"></a></li>
+        <li><a href="#" class="social Youtube"><img src="img/youtube-32.png" alt="check us out on YouTube"></a></li>
+        <li><a href="#" class="social "><img src="img/spotify-32.png" alt="listen to us on Spotify"></a></li>
+      </ul>
+      <p class="copyright">Copyright 2015, Accessible Frog</p>
+    </footer>
+  </body>
+</html>
