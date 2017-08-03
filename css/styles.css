@@ -1,26 +1,28 @@
 /* Global Layout Set-up */
-* {
-  box-sizing: border-box;
-}
+
+
 
 body {
   margin: 0;
   padding: 0;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  color: #7c7c7c;
-  background: #faf2a1;
+  color: #000;
+  background: #439A86;
 }
+
 
 /* Link Styles */
 
 a {
   text-decoration: none;
-  color: #999;
+  color: #EB5E28;
 }
-
+a.buy{
+  color: #EB5E28;
+}
 a:hover {
-  color: #999;
+  color: #490039;
 }
 
 /* Section Styles */
@@ -29,19 +31,23 @@ h2 {
 }
 
 h1{
-  color: #5eb;
+  color: #252422;
 }
 
 p{
 
-  color: #5eb;
+  color: #252422;
+}
+
+input:focus {
+  background-color: #EB5E28;
+  border-color: black;
 }
 
 .main-nav {
   width: 100%;
-  background: rgba(45, 43, 48, 0.8);
+  background: #252422;
   min-height: 30px;
-  padding: 10px;
   position: fixed;
   text-align: center;
 }
@@ -107,7 +113,7 @@ header .name{
   margin: 30px;
   padding: 20px 40px 40px;
   text-align: left;
-  border-top: 4px solid #fe5f55 ;
+  border-top: 4px solid #252422 ;
   clear: both;
 
   
@@ -135,7 +141,7 @@ header .name{
 .heading{
   font-size: 2em;
   text-transform: uppercase;
-  color: #fe5f55;
+  color: #252422;
   margin-top: 10px;
 }
 
@@ -172,22 +178,10 @@ a.social {
   transition: all .5s;
 }
 
-a.twitter {
-  background-image: url(../img/twitter-32.png);
-}
-
-a.youtube {
-  background-image: url(../img/youtube-32.png);
-}
-
-a.spotify {
-  background-image: url(../img/spotify-32.png);
-}
-
 a.social:hover {
   opacity: 1;
   background-color: #5eb;
-  border-color: 
+  
 }
 .clearfix {
   clear: both;
@@ -197,10 +191,10 @@ a.social:hover {
 @media screen and (min-width: 840px) {
 
   .flex {
-    display: -ms-flexbox;      /* TWEENER - IE 10 */
+       /* TWEENER - IE 10 */
     display: flex;
     max-width: 1200px;
-    -ms-flex-pack: distribute;
+  
   }
 
   header {
