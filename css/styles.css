@@ -19,10 +19,10 @@ a {
   color: #EB5E28;
 }
 a.buy{
-  color: #EB5E28;
+  color: #000;
 }
 a:hover {
-  color: #490039;
+  color: #fff;
 }
 
 /* Section Styles */
