@@ -19,10 +19,11 @@ a {
   color: #EB5E28;
 }
 a.buy{
-  color: #000;
+  color: #fff;
+  text-decoration: underline;
 }
 a:hover {
-  color: #fff;
+  color: #41242a;
 }
 
 /* Section Styles */
